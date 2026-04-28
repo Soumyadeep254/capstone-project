@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 
+credentials.txt
+
 # C extensions
 *.so
 
