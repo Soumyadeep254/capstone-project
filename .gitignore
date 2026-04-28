@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 
 credentials.txt
+atlas
 
 # C extensions
 *.so
