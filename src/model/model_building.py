@@ -33,6 +33,7 @@ def train_model(X_train: np.ndarray, y_train: np.ndarray) -> LogisticRegression:
 def save_model(model, file_path: str) -> None:
     """Save the trained model to a file."""
     try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, 'wb') as file:
             pickle.dump(model, file)
         logging.info('Model saved to %s', file_path)
